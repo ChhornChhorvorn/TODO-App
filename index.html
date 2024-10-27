@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <div class="wrapper">
+        <form>
+            <!-- research -->
+            <input type="text" id="todo-input" placeholder="add text here" autocomplete="off">
+            <button id="add-button">ADD</button>
+        </form>
+        <ul id="todo-list">
+            <li class="todo">
+                <input type="checkbox" id="todo-1">
+                <label for="todo-1" class="custom-checkbox">
+                    <svg fill="transparent" 
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M5 11.917 9.724 16.5 19 7.5"/>
+                    </svg>                      
+                </label>
+                <label for="todo-1" class="todo-text">
+                    web-dev project with html, css and js
+                </label>
+                <button class="delete-button">
+                    <svg fill="var(--secondary-color)"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
+                    </svg> 
+                </button>
+            </li>
+            <li class="todo">
+                <input type="checkbox" id="todo-2">
+                <label for="todo-2" class="custom-checkbox">
+                    <svg fill="transparent"
+                    xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                        <path d="M5 11.917 9.724 16.5 19 7.5"/>
+                    </svg>
+                </label>
+                <label for="todo-2" class="todo-text">
+                    web-dev project with html, css and js
+                </label>
+                <button class="delete-button">
+                    <svg fill="var(--secondary-color)"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <script src="./todoapp.js"></script>
+</body>
+</html>
